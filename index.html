@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing-page</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(255, 255, 255);
+            display: block;
+        }
+        
+        header{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 20px;
+            border: 2px solid;
+            position: sticky;
+            top: 0px;
+            z-index: 500;
+            background-image: linear-gradient(to right, black, black, rgb(0, 35, 132), rgb(0, 211, 208));
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+
+        span{
+            color: white;
+            margin-top: 0px;
+            margin-left: 90px;
+            font-size: larger;
+        }
+        
+        nav{
+            margin-left: 30%;
+        }
+
+        nav ul{ 
+           display: flex;
+        }
+
+        nav li{
+            list-style: none;
+        }
+        
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 0px 60px;
+            position: relative;
+            z-index: 400;
+            font-size: 17px;
+        }
+
+        nav .a::after{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transition: 0.5s ease-in-out;
+            z-index: 500;
+        }
+
+        nav .a:hover::after{
+            width: 100%;
+            background-color: rgb(0, 85, 255);
+        }
+
+        nav .btn{
+            background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 5px 20px; border-radius: 15px; margin-left: 35px; border: 2px solid;
+            transition: 0.5s ease-in-out;
+        }
+
+        nav .btn:hover{
+            background-color: rgba(176, 44, 44, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        h1{
+            display: block;
+            width: 30%;
+            position: relative;
+            top: 150px;
+            left: 150px;
+            font-size: 50px;
+            color: rgb(25, 43, 113);
+            /* border: 2px solid; */
+            z-index: 200;
+        }
+
+        .texto{
+            text-align:left;
+            position: relative;
+            top: 200px;
+            width: 40%;
+            left: 100px;
+            color:  rgb(25, 43, 113);
+        }
+
+        .f-img{
+            background-image: url(/IMGs/PRINCIPAIS/aquarela-staint-azul.jpg);
+            width: 700px;
+            height: 700px;
+            background-position: center;
+            background-size: contain;     
+            position: relative;
+            left: 45%;
+            top: -1100px;
+            /* border: 2px solid; */
+            z-index: 90;       
+        }
+
+        .img{
+            background-image: url(/IMGs/PRINCIPAIS/3\ Sem\ Título_20250522194309.png);
+            width: 800px;
+            height: 800px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            top: -150px;
+            left: 700px;
+            z-index: 200;
+        }
+
+        section{
+            background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 35, 132), rgb(0, 211, 208), rgb(7, 148, 146),   rgb(0, 35, 132)); 
+            width: 100%;
+            height: 1000px;
+            position: relative;
+            top: -1165px;
+            z-index: 201;
+            border-top: 300px solid rgb(7, 7, 7);
+            margin-bottom: -15px;
+        }
+
+    .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+    .galeria > div {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+    .galeria > div:hover{
+        transform: scale(0.9);
+        opacity: 0.5;
+        
+    }
+
+        footer{
+            display: flex;
+            background-color: black;
+            width: 100%;
+            height: 310px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            margin-top: -1150px;
+            border-top: 60px solid rgb(0, 35, 132);
+            font-size: 20px;
+            margin-top: -1170px;
+        }
+        
+ 
+    </style>
+    
+</head>
+
+<body>
+    
+    <header>
+        <span class="log">LOGOTIPO</span>
+        <nav>
+            <ul>
+                <li><a class="a" href="">Sobre</a></li>
+                <li><a class="a" href="">Contato</a></li>
+                <li><a class="btn"style="" href="">Baixe agora</a></li>
+            </ul>
+        </nav>
+
+        <img style="margin-right: 50px; width: 30px;
+            height: 30px;" src="/IMGs/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+    </header>
+     
+    
+    <h1>LANDING-PAGE</h1>
+
+    <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi possimus magnam dicta iusto autem impedit illo accusantium officia illum dignissimos quibusdam voluptatibus non error atque, sunt consequatur nam cupiditate optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptas officiis amet laborum harum blanditiis eius, id nisi minus odit officia molestiae consectetur rem repudiandae laudantium deserunt expedita aspernatur. Ducimus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi possimus magnam dicta iusto autem impedit illo accusantium officia illum dignissimos quibusdam voluptatibus non error atque, sunt consequatur nam cupiditate optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptas officiis amet laborum harum blanditiis eius, id nisi minus odit officia molestiae consectetur rem repudiandae laudantium deserunt expedita aspernatur. Ducimus?</p>
+
+    <div class="img"></div>
+
+    <div class="f-img"></div>
+
+    <section>
+       
+<div class="galeria">
+    <div class="foto" style="background-image: url(/IMGs/GALERIA/conceito-de-marketing-de-midia-social-para-marketing-com-aplicativos.webp);"></div>
+
+    <div class="foto" style="background-image: url(/IMGs/GALERIA/conceito-de-marketing-de-midia-social-para-marketing-com-aplicativos-2.webp);"></div>
+
+    <div class="foto" style="background-image: url(/IMGs/GALERIA/conceito-de-marketing-de-midia-social-para-marketing-com-aplicativos-3.webp);"></div>
+
+    <div class="foto" style="background-image: url(/IMGs/GALERIA/homem-bonito-de-pele-escura-usando-telefone-celular-e-sorrindo-feliz.webp);"></div>
+
+    <div class="foto" style="background-image: url(/IMGs/GALERIA/woman-3236059_1280.webp);"></div>
+</div>
+        
+    </section>
+    
+<footer>
+    <p>© 2025 Landing page - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
